@@ -23,6 +23,24 @@ namespace cscondition
             }
 
 
+
+            //현재 시간 구하기
+            Console.WriteLine(DateTime.Now.Year);
+            Console.WriteLine(DateTime.Now.Month);
+            Console.WriteLine(DateTime.Now.Day);
+            Console.WriteLine(DateTime.Now.Hour);
+            Console.WriteLine(DateTime.Now.Millisecond);
+            Console.WriteLine(DateTime.Now.Second);
+
+            //오전 오후 구분
+            if (DateTime.Now.Hour < 12) {
+                Console.WriteLine("오전입니다.");
+            }
+            if (DateTime.Now.Hour >= 12)
+            {
+                Console.WriteLine("오후입니다.");
+            }
+
         }
     }
 }
